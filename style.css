@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* 大枠 */
+body {
+	margin: 0;
+	background: #fff;
+	color: #555;
+	line-height: 1.8;
+	font-family: 'Sawarabi Mincho', sans-serif;
+}
+img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  vertical-align: bottom;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+p,h1,h2,h3 {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	color: #222;
+	display: block;
+}
+a:hover {
+	opacity: .7;
+	display: block;
+}
+header,main,footer {
+	width: 80%;
+	margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+h2 {
+	border-bottom: solid 1px #555;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+h3 {
+	margin-bottom: .5rem;
+	font-size: 1rem;
+}
+h3::before {
+	content: "♦";
+}
+section {
+	margin-bottom: 3rem;
+}
+article {
+	margin-bottom: 2rem;
+}
+.text {
+	font-size: .8rem;
+}
+/* header */
+header {
+	color: #222;
+}
+header h1.wf-hannari { 
+	font-family: "Hannari";
+	margin: 1rem 0;
+	font-weight: bold;
+}
+nav {
+	overflow: hidden;
+}
+nav ul {
+	text-align: left;
+	overflow: hidden;
+	clear: both;
+	float: right;
+}
+nav ul li {
+	float: left;
+	padding: .5rem .5rem 1rem;
+}
+nav ul li a {
+	color: #222;
+	padding: .5rem 1rem;
+	border: dotted 1px #555;
+}
+#mainImg p {
+	text-align: center;
+	background: #bcbcbc;
+	clear: both;
+	margin-bottom: 3rem;
+}
+/* main */
+#bio ul {
+	list-style-type: disc;
+	list-style-position: inside;
+}
+article .img {
+	border: solid 1px #ccc;
+}
+section#work {
+	margin-bottom: 0;
+}
+section#work span {
+	font-size: .9rem;
+	margin-left: .5rem;
+}
+/* footer */
+footer {
+	padding: 0;
+}
+p.foot {
+	padding: 1rem;
+	text-align: right;  
+}
+
+@media only screen and (min-width: 760px) {
+	img {
+		max-width: 960px;
+	  }
+	header,main,footer {
+		max-width: 960px;
+	}
+	header h1.wf-hannari { 
+		margin: 2.5rem 0;
+	}
+	
+	nav ul li {
+		margin-left: 1rem;
+	}
+	nav ul li a {
+		border: none;
+		padding-bottom: o;
+		border-bottom: solid 1px #fff;
+	}
+	nav ul li a:hover {
+		opacity: 1;
+		padding-bottom: 0;
+		border-bottom: solid 1px #222;
+	}
+
+	#mainImg p {
+		margin-bottom: 8rem;
+	}
+	section {
+		margin-bottom: 8rem;
+	}
+	article {
+		margin-bottom: 6rem;
+	}
+	main {
+		padding-bottom: 2rem;
+	}
+	h2 {
+		border-bottom: none;
+		margin-bottom: 1.5rem;
+		text-align: center;
+	}
+	h3 {
+		margin-bottom: .5rem;
+		font-size: 1.3rem;
+	}
+	.text {
+		font-size: 1rem;
+	}
+}
+
+
